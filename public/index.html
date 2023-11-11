@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,400,800" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon/images (1).png" type="image/x-icon">
+    
+    <title>2048</title>
+    </head>
+    
+    <body>
+      <div class="game">
+        <div class="head">
+          <div class="a"><h1>2048 GAME</h1>
+            
+             <hr>
+             <h2>Score: <span id="score">0</span></h2></div>
+            
+        </div>
+        <div class="popup" id="popup">
+          <p class="des"><b>How to play:</b><br/><br/><button id="cross" class="info">✖</button> 
+            Use your arrow-keys to slide the tiles. <br><br><br> <img id="arrow" src="icon/download.png"><br/>
+            Two tiles with the same value in line can be merged. The goal is to merge the tiles and get the 2048 tile.<br/><br/>
+            The score is a sum of the merged tiles.<br><br><br><br/>
+    </p>
+    <div id="popup-for-win" class="hidden">
+      <img id="win" src="icon/images.jpeg"><button id="cross" class="info">✖</button>
+    </div>
+
+        
+    <div id="popup-for-loose" class="hidden">
+      <img id="loose" src="icon/game.png"><button id="cross" class="info">✖</button>
+    </div>
+      </div>
+        <div id="board">
+      </div>
+      <hr>
+      <button id="info" class="info" onClick='show()'>i</button>
+      <button id="repeat" class="info repeat" onClick='resetGame()'>↻</button>
+    </body>
+    <script src="main.js"></script>

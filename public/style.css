@@ -1,0 +1,183 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  }
+  hr {
+  width: 500px;
+  }
+  #board {
+  width: 400px;
+  height: 400px;
+  background-color: #cdc1b5;
+  border: 6px solid #bbada0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .tile{
+  width: 90px;
+  height: 90px;
+  border: 5px solid #bbada0;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 4px;
+  transition-duration:0.1s;  
+}
+
+
+
+
+
+  /* CSS */
+.hidden {
+  display: none;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 387px;
+  width: 551px;
+}
+
+#popup-for-win {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 387px;
+  width: 551px;
+}
+
+
+#popup-for-loose {
+  position: fixed;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 387px;
+  width: 551px;
+}
+
+
+
+/* Updated Colors */
+.x2 {
+  background-color: #eee4da;
+  color: #727371;
+}
+
+.x4 {
+  background-color: #ece0ca;
+  color:#727371;
+}
+
+.x8 {
+  background-color: #f4b17a;
+  color: white;
+}
+
+.x16 {
+  background-color: #f59575;
+  color: white;
+}
+
+.x32 {
+  background-color: #f57c5f;
+  color: white;
+}
+
+.x64 {
+  background-color: #f65d3b;
+  color: white;
+}
+
+.x128 {
+  background-color: #edce71;
+  color: white;
+}
+
+.x256 {
+  background-color: #edcc63;
+  color: white;
+}
+
+.x512 {
+  background-color: #edc651;
+  color: white;
+}
+
+.x1024 {
+  background-color: #eec744;
+  color: white;
+}
+
+.x2048 {
+  background-color: #fe3d3d;
+  color: white;
+}
+
+
+
+/* Your existing styles */
+
+/* Styles for the info and reset buttons */
+.info {
+    background-color: #3498db; /* Change to your preferred background color */
+    color: #fff; /* Change to your preferred text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover effect for the info and reset buttons */
+.info:hover, .repeat:hover {
+    background-color: #e74c3c; /* Change to your preferred hover background color */
+}
+
+/* Styles for the reset button */
+.repeat {
+    background-color: #117b89; /* Change to your preferred background color */
+    color: #fff; /* Change to your preferred text color */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+button#cross {
+  background-color: #e74c3c;
+  position: absolute;
+  left: 524px;
+  top: 12px;
+  border-radius: 4px;
+}
+img#arrow {
+  height: 71px;
+  position: absolute;
+  top: 117px;
+  left: 260px;
+}
+p.des {
+  font-size: 19px;
+  padding: 0 107px;}
